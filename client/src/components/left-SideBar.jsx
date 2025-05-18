@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./left-SideBar.css";
+import hamburgerIcon from '../assets/hamburger32.png';
 
 const menuItems = [
   { id: 1, label: "Home", icon: "🏠" },
@@ -12,11 +13,16 @@ const menuItems = [
   { id: 8, label: "Liked videos", icon: "👍" },
 ];
 
-const LeftSidebarMenu = ({ isOpen }) => {
+const LeftSidebarMenu = ({ isOpen, onToggle }) => {
   const [activeId, setActiveId] = useState(1);
-
+  
   return (
     <div className={`sidebar ${isOpen ? 'open' : ''}`}>
+      <div>
+         <div className='hamburger-menu' onClick={onToggle}>
+            <img src={hamburgerIcon} alt="Menu" />
+          </div>
+      </div>
       {menuItems.map((item) => (
         <button
           key={item.id}
