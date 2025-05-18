@@ -2,6 +2,7 @@
 import Navbar from '../components/Navbar.jsx';
 import LeftSidebarMenu from '../components/left-SideBar.jsx';
 import './layout.css';
+import LeftIcon from '../components/left-icon.jsx';
 import React, {useState} from 'react';
 
 const Layout = () => {
@@ -14,6 +15,7 @@ const Layout = () => {
   return (
     <div className="app">
       <Navbar toggleSidebar={toggleSidebar} />
+      <LeftIcon />
       <LeftSidebarMenu isOpen={isSidebarOpen} onToggle={() => setSidebarOpen(!isSidebarOpen)}/>
     </div>
   );

@@ -23,7 +23,7 @@ const Navbar = ({ toggleSidebar }) => {
                 </button>
             </div>
              <div className="navbar-right">
-                <button className="icon-btn">📹</button>
+                <button className="icon-btn">📹 Create</button>
                 <button className="icon-btn">🔔</button>
                 <img src={accountIcon} alt="User" className="profile-pic" />
             </div>
