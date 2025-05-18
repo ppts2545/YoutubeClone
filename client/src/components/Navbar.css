@@ -1,0 +1,81 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 16px;
+    background-color: white;
+}
+.logo {
+    height: 30px;
+    padding-left: 30px;
+}
+.navbar-left {
+    display: flex;
+    flex-direction: row;
+    height: 30px;
+}
+
+.navbar-center {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.search-input {
+  width: 50%;
+  height: 40px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  box-sizing: border-box; 
+  border-radius: 20px 0 0 20px;
+  outline: none;
+}
+
+.search-btn {
+  padding: 0px 16px;
+  height: 40px;
+  border: 1px solid #ccc;
+  border-left: none;
+  border-radius: 0 20px 20px 0;
+  font-size: 16px;
+  background-color: #f8f8f8;
+  cursor: pointer;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+.pdf-icon {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 7px;
+}
+.profile-pic {
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+}
