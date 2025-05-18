@@ -1,0 +1,111 @@
+/* Reset and base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #0f0f0f;
+}
+
+/* Header */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 56px;
+  padding: 0 16px;
+  background-color: white;
+  border-bottom: 1px solid #ddd;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 22px;
+  color: red;
+  font-weight: bold;
+}
+
+header input {
+  width: 40%;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  font-size: 14px;
+}
+
+.user-icon {
+  font-size: 22px;
+  background-color: #eee;
+  padding: 8px;
+  border-radius: 50%;
+}
+
+/* Layout container */
+.container {
+  display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 240px;
+  background-color: white;
+  border-right: 1px solid #ddd;
+  height: calc(100vh - 56px);
+  position: sticky;
+  top: 56px;
+  padding-top: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0 10px;
+}
+
+.sidebar li {
+  padding: 10px 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background 0.2s;
+}
+
+.sidebar li:hover {
+  background-color: #f1f1f1;
+}
+
+/* Video grid */
+.videos {
+  flex: 1;
+  padding: 24px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.video-card {
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.video-card:hover {
+  transform: translateY(-4px);
+}
+
+.video-card img {
+  width: 100%;
+  height: auto;
+}
+
+.video-card h3 {
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 500;
+}
